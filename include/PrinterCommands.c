@@ -1,10 +1,12 @@
 #include <gb.h>
 #include "CommandBytes.h"
-void PrinterInit(){
+
+void PrinterInit(void){
+    PrinterCommand(PRINTER_INIT);
 
 }
 
-void PrinterCommand() {
+void PrinterCommand(char *PrinterCmd) {
 
 }
 
@@ -24,6 +26,10 @@ int PrinterErrorCheck() {
 
 }
 
-void PrintTile() {
+void PrintTile(char *Tile) {
 
+}
+
+void SendByte(char byte) {
+    
 }
